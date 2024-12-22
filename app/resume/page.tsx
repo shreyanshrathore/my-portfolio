@@ -2,9 +2,9 @@
 
 import { BookOutline } from "react-ionicons";
 
-const page = () => {
+export default function Home() {
   return (
-    <article className="resume" data-page="resume">
+    <article className="resume active" data-page="resume">
       <header>
         <h2 className="h2 article-title">Resume</h2>
       </header>
@@ -13,7 +13,7 @@ const page = () => {
         <div className="title-wrapper">
           <div className="icon-box">
             {/* <ion-icon name="book-outline"></ion-icon> */}
-            <BookOutline />
+            <BookOutline color={"#FFDB6E"} />
           </div>
 
           <h3 className="h3">Education</h3>
@@ -64,7 +64,7 @@ const page = () => {
       <section className="timeline">
         <div className="title-wrapper">
           <div className="icon-box">
-            <BookOutline />
+            <BookOutline color={"#FFDB6E"} />
           </div>
 
           <h3 className="h3">Experience</h3>
@@ -130,7 +130,7 @@ const page = () => {
         <ul className="skills-list content-card">
           <li className="skills-item">
             <div className="title-wrapper">
-              <h5 className="h5">Web design</h5>
+              <h5 className="h5">Frontend</h5>
               <data value="80">80%</data>
             </div>
 
@@ -144,22 +144,8 @@ const page = () => {
 
           <li className="skills-item">
             <div className="title-wrapper">
-              <h5 className="h5">Graphic design</h5>
-              <data value="70">70%</data>
-            </div>
-
-            <div className="skill-progress-bg">
-              <div
-                className="skill-progress-fill"
-                style={{ width: "70%" }}
-              ></div>
-            </div>
-          </li>
-
-          <li className="skills-item">
-            <div className="title-wrapper">
-              <h5 className="h5">Branding</h5>
-              <data value="90">90%</data>
+              <h5 className="h5">Backend</h5>
+              <data value="70">90%</data>
             </div>
 
             <div className="skill-progress-bg">
@@ -172,7 +158,21 @@ const page = () => {
 
           <li className="skills-item">
             <div className="title-wrapper">
-              <h5 className="h5">WordPress</h5>
+              <h5 className="h5">Devops</h5>
+              <data value="90">80%</data>
+            </div>
+
+            <div className="skill-progress-bg">
+              <div
+                className="skill-progress-fill"
+                style={{ width: "80%" }}
+              ></div>
+            </div>
+          </li>
+
+          <li className="skills-item">
+            <div className="title-wrapper">
+              <h5 className="h5">Blockchain</h5>
               <data value="50">50%</data>
             </div>
 
@@ -187,6 +187,4 @@ const page = () => {
       </section>
     </article>
   );
-};
-
-export default page;
+}

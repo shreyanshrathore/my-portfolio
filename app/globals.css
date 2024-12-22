@@ -326,14 +326,17 @@ article.active {
 
 .h2 {
   font-size: var(--fs-1);
+  font-weight: var(--fw-600);
 }
 
 .h3 {
   font-size: var(--fs-2);
+  font-weight: var(--fw-600);
 }
 
 .h4 {
   font-size: var(--fs-4);
+  font-weight: var(--fw-600);
 }
 
 .h5 {
@@ -541,7 +544,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
-  padding-bottom: 4px;
+  /* padding-bottom: 4px; */
   padding-left: 7px;
 }
 
@@ -709,7 +712,9 @@ main {
   top: 0;
   left: 0;
   transform: translate(15px, -25px);
-  background: var(--bg-gradient-onyx);
+  /* background: var(--bg-gradient-onyx); */
+  /* background: var(--orange-yellow-crayola); */
+  background: var(--white-2);
   border-radius: 14px;
   box-shadow: var(--shadow-1);
 }

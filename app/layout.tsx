@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 
 import { Poppins } from "next/font/google";
 import "./globals.css"; // Ensure you have a global CSS file
@@ -12,17 +11,7 @@ const poppins = Poppins({
 
 import "./globals.css";
 import Aside from "./Aside";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Nav from "./components/Nav";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -36,16 +25,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-        rel="stylesheet"
-      />
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <main>
           <Aside />
-          {children}
+          <div className="main-content">
+            <Nav />
+            {children}
+          </div>
         </main>
       </body>
     </html>
