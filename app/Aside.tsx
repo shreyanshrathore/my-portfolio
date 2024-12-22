@@ -1,7 +1,6 @@
 "use client";
 // import motion from "motion/react";
 import { motion } from "framer-motion";
-import { Instagram, Linkedin, X } from "lucide-react";
 import {
   ChevronDown,
   MailOutline,

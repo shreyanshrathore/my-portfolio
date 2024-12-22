@@ -1,7 +1,5 @@
 "use client";
 
-import { CloseOutline } from "react-ionicons";
-
 export default function Home() {
   return (
     <article className="about  active" data-page="about">
